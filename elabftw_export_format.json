@@ -1,0 +1,94 @@
+{
+  "_readme": [
+    "Controls the SHAPE of the eLabFTW JSON written by 'Export to eLabFTW': group ids,",
+    "group names, and the text used in field names. This is NOT the file that decides",
+    "which fields the export dialog offers - that is elabftw_bol_procedures.json.",
+    "",
+    "Delete any key to fall back to its default (shown below as the shipped value) -",
+    "you only need to list the keys you actually want to change.",
+    "",
+    "Every '{...}' placeholder must be kept literally in the strings that use it, or",
+    "the fallback below is used instead and a note is printed to the console.",
+    "",
+    "group ids: eLabFTW treats id 0 as 'no group', so keep every id in this file, and",
+    "every id implied by the two '_base' values below (base + Pol 1..6), away from 0."
+  ],
+
+  "_readme_naming": [
+    "Field names here must match the ones the PEMFC MEA Test Procedure Builder writes,",
+    "so a procedure export and a results export of the same run can be loaded into one",
+    "eLabFTW entry and line up field for field. Two rules come out of that:",
+    "",
+    "1. Empty bol_field_prefix / ast_field_prefix mean 'reuse the field name the",
+    "   procedure file already used' (e.g. 'BOL: Galvanostatic Ramp (GSTEP): Temperature')",
+    "   rather than inventing a shorter one ('BOL Temperature') that nothing can match.",
+    "",
+    "2. Pol N exports as EC N. The builder numbers blocks EC(conditionId + catalogSize x",
+    "   phaseIndex) - the same arithmetic as the bench's SetMarker - so Pol 4 is the",
+    "   post-AST measurement of condition 1, and is called EC4 in both tools."
+  ],
+
+  "mea_field_name": "MEA",
+
+  "identification_group_id": 9,
+  "identification_group_name": "Identification",
+
+  "bol_group_id": 7,
+  "bol_field_prefix": "",
+
+  "ast_group_id": 8,
+  "ast_field_prefix": "",
+
+  "_readme_pol_ids": "Pol N's group id = base + N, e.g. base 0 -> Pol 1..6 use ids 1..6.",
+  "pol_results_group_id_base": 0,
+  "pol_conditions_group_id_base": 20,
+
+  "_readme_patterns": [
+    "{pol} is the Pol number (1..6); {pol_export_label} is the result of applying",
+    "pol_export_label_pattern to it, i.e. 'EC4'."
+  ],
+  "pol_export_label_pattern": "EC{pol}",
+  "pol_results_group_name_pattern": "Key Results — {pol_export_label}",
+  "pol_conditions_group_name_pattern": "Test Conditions — {pol_export_label}",
+  "_readme_no_scope_word": [
+    "Field names carry no scope word ('Polarization Curve:', 'Conditions:'): the group",
+    "heading already says which block and which section, so repeating it only made the",
+    "rows longer. What remains is the block number - required, because extra_fields is one",
+    "flat map and 'i @ 0.6 V [A/cm²]' alone would collide between blocks - and the quantity."
+  ],
+  "pol_conditions_field_prefix_pattern": "{pol_export_label} ",
+
+  "_readme_result_metric_labels": [
+    "Exported label per result metric - the text after 'EC4 ' in the field name. These",
+    "must match the blank result fields the Procedure Builder puts in its Key Results",
+    "group, or a measured value creates a new field instead of filling the one waiting",
+    "for it. The keys on the left (i06/i065/ocv/pmax) are fixed internal ids, do not",
+    "rename them; only retype the label text on the right.",
+    "",
+    "The unit appears here in the name AND in result_metric_units below. That is",
+    "deliberate: flat reports and CSV exports keep only the value, so a name without a",
+    "unit leaves a column of bare numbers."
+  ],
+  "result_metric_labels": {
+    "i06": "i @ 0.6 V [A/cm²]",
+    "i065": "i @ 0.65 V [A/cm²]",
+    "ocv": "OCV [V]",
+    "pmax": "Pmax [W/cm²]"
+  },
+
+  "_readme_result_metric_units": [
+    "Written to eLabFTW's own 'unit'/'units' properties, so the number stays",
+    "machine-readable. Set one to \"\" to omit it."
+  ],
+  "result_metric_units": {
+    "i06": "A/cm²",
+    "i065": "A/cm²",
+    "ocv": "V",
+    "pmax": "W/cm²"
+  },
+
+  "display_main_text": false,
+
+  "_readme_filename": "{key} is replaced with the dataset's Key (folder/archive name).",
+  "filename_pattern": "{key}_eLabFTW.json"
+}

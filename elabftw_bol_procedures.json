@@ -1,0 +1,2392 @@
+{
+  "extra_fields": {
+    "MEA": {
+      "type": "text",
+      "description": "Raw dataset key, filled in by the results export",
+      "value": "",
+      "group_id": 1,
+      "position": 1
+    },
+    "Date": {
+      "type": "date",
+      "value": "",
+      "group_id": 1,
+      "position": 2
+    },
+    "Label": {
+      "type": "text",
+      "required": true,
+      "description": "e.g. 62510_RVT_ECM_002_001",
+      "value": "",
+      "group_id": 1,
+      "position": 3
+    },
+    "Project": {
+      "type": "text",
+      "value": "",
+      "group_id": 1,
+      "position": 4
+    },
+    "Owner": {
+      "type": "text",
+      "value": "",
+      "group_id": 1,
+      "position": 5
+    },
+    "Operator": {
+      "type": "users",
+      "value": "",
+      "group_id": 1,
+      "position": 6
+    },
+    "Sample Name": {
+      "type": "text",
+      "value": "",
+      "group_id": 1,
+      "position": 7
+    },
+    "Test SOP": {
+      "type": "items",
+      "description": "Link to SOP / protocol resource",
+      "value": "",
+      "group_id": 1,
+      "position": 8
+    },
+    "Test device": {
+      "type": "items",
+      "description": "Link to potentiostat / load / cell hardware device resource",
+      "value": "",
+      "group_id": 1,
+      "position": 9
+    },
+    "Test bench / Station": {
+      "type": "items",
+      "description": "Link to test bench resource",
+      "value": "",
+      "group_id": 1,
+      "position": 10
+    },
+    "Active Area [cm²]": {
+      "type": "number",
+      "unit": "cm²",
+      "units": [
+        "cm²"
+      ],
+      "description": "Geometric active area of one cell",
+      "value": "25",
+      "group_id": 1,
+      "position": 11
+    },
+    "Number of Cells": {
+      "type": "number",
+      "unit": "",
+      "units": [],
+      "value": "1",
+      "group_id": 1,
+      "position": 12
+    },
+    "Condition Catalog Size": {
+      "type": "number",
+      "unit": "",
+      "units": [],
+      "description": "Post-AST blocks export as EC(condition ID + this)",
+      "value": "3",
+      "group_id": 1,
+      "position": 13
+    },
+    "Raw Data Storage Path": {
+      "type": "text",
+      "value": "",
+      "group_id": 24,
+      "position": 1
+    },
+    "Export Format": {
+      "type": "text",
+      "description": "Naming format this file was generated with — must match the format active in the builder for \"Import Procedure…\" to read every field correctly.",
+      "value": "default",
+      "group_id": 1,
+      "position": 15
+    },
+    "EC1 i @ 0.6 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 1,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 i @ 0.65 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 2,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 OCV [V]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 3,
+      "unit": "V",
+      "units": [
+        "V"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 Pmax [W/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 4,
+      "unit": "W/cm²",
+      "units": [
+        "W/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 CV 1.1 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 5,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 CV 1.2 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 6,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 CV 1.3 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 7,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 CV 1.4 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 8,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC1 EIS @25A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 9,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC1 EIS @50A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 10,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC1 EIS @75A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 2,
+      "position": 11,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC2 i @ 0.6 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 1,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 i @ 0.65 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 2,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 OCV [V]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 3,
+      "unit": "V",
+      "units": [
+        "V"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 Pmax [W/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 4,
+      "unit": "W/cm²",
+      "units": [
+        "W/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 CV 2.1 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 5,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 CV 2.2 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 6,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 CV 2.3 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 7,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 CV 2.4 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 8,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC2 EIS @25A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 9,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC2 EIS @50A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 10,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC2 EIS @75A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 3,
+      "position": 11,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC3 i @ 0.6 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 1,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 i @ 0.65 V [A/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 2,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 OCV [V]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 3,
+      "unit": "V",
+      "units": [
+        "V"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 Pmax [W/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 4,
+      "unit": "W/cm²",
+      "units": [
+        "W/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 CV 3.1 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 5,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 CV 3.2 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 6,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 CV 3.3 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 7,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 CV 3.4 ECSA [m²/g]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 8,
+      "unit": "m²/g",
+      "units": [
+        "m²/g",
+        "cm²/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "EC3 EIS @25A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 9,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC3 EIS @50A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 10,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC3 EIS @75A HFR [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 4,
+      "position": 11,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "High-frequency resistance"
+    },
+    "EC1 Condition ID": {
+      "type": "number",
+      "value": "1",
+      "group_id": 5,
+      "position": 1,
+      "unit": "",
+      "units": [],
+      "description": "Catalog condition 1, measured pre-AST"
+    },
+    "EC1 λ": {
+      "type": "number",
+      "value": "5",
+      "group_id": 5,
+      "position": 2,
+      "unit": "",
+      "units": []
+    },
+    "EC1 RH Cathode [%]": {
+      "type": "number",
+      "value": "70",
+      "group_id": 5,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC1 RH Anode [%]": {
+      "type": "number",
+      "value": "70",
+      "group_id": 5,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC1 Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 5,
+      "position": 5,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "EC1 Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 5,
+      "position": 6,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "EC2 Condition ID": {
+      "type": "number",
+      "value": "2",
+      "group_id": 6,
+      "position": 1,
+      "unit": "",
+      "units": [],
+      "description": "Catalog condition 2, measured pre-AST"
+    },
+    "EC2 λ": {
+      "type": "number",
+      "value": "3",
+      "group_id": 6,
+      "position": 2,
+      "unit": "",
+      "units": []
+    },
+    "EC2 RH Cathode [%]": {
+      "type": "number",
+      "value": "15",
+      "group_id": 6,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC2 RH Anode [%]": {
+      "type": "number",
+      "value": "70",
+      "group_id": 6,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC2 Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 6,
+      "position": 5,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "EC2 Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 6,
+      "position": 6,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "EC3 Condition ID": {
+      "type": "number",
+      "value": "3",
+      "group_id": 7,
+      "position": 1,
+      "unit": "",
+      "units": [],
+      "description": "Catalog condition 3, measured pre-AST"
+    },
+    "EC3 λ": {
+      "type": "number",
+      "value": "2",
+      "group_id": 7,
+      "position": 2,
+      "unit": "",
+      "units": []
+    },
+    "EC3 RH Cathode [%]": {
+      "type": "number",
+      "value": "0",
+      "group_id": 7,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC3 RH Anode [%]": {
+      "type": "number",
+      "value": "70",
+      "group_id": 7,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "EC3 Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 7,
+      "position": 5,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "EC3 Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 7,
+      "position": 6,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "EC1 EIS @25A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 1,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC1 EIS @50A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 2,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC1 EIS @75A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 3,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC1 H2X 1.1 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 4,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.3 V"
+    },
+    "EC1 H2X 1.2 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 5,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.4 V"
+    },
+    "EC1 H2X 1.3 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 6,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.5 V"
+    },
+    "EC1 H2X 1.4 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 7,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.6 V"
+    },
+    "EC1 H2X 1.5 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 8,
+      "position": 8,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.7 V"
+    },
+    "EC2 EIS @25A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 1,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC2 EIS @50A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 2,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC2 EIS @75A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 3,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC2 H2X 2.1 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 4,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.3 V"
+    },
+    "EC2 H2X 2.2 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 5,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.4 V"
+    },
+    "EC2 H2X 2.3 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 6,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.5 V"
+    },
+    "EC2 H2X 2.4 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 7,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.6 V"
+    },
+    "EC2 H2X 2.5 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 9,
+      "position": 8,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.7 V"
+    },
+    "EC3 EIS @25A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 1,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC3 EIS @50A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 2,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC3 EIS @75A Rct [mΩ·cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 3,
+      "unit": "mΩ·cm²",
+      "units": [
+        "mΩ·cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Charge transfer resistance"
+    },
+    "EC3 H2X 3.1 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 4,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.3 V"
+    },
+    "EC3 H2X 3.2 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 5,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.4 V"
+    },
+    "EC3 H2X 3.3 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 6,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.5 V"
+    },
+    "EC3 H2X 3.4 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 7,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.6 V"
+    },
+    "EC3 H2X 3.5 Crossover Current Density [mA/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 10,
+      "position": 8,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ],
+      "blank_value_on_duplicate": true,
+      "description": "Measured at 0.7 V"
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Activation Type": {
+      "type": "text",
+      "value": "Galvanostatic Ramp (GSTEP)",
+      "group_id": 11,
+      "position": 1
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 11,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): RH Anode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 11,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): RH Cathode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 11,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Gas Anode": {
+      "type": "text",
+      "value": "H₂",
+      "group_id": 11,
+      "position": 5
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Gas Cathode": {
+      "type": "text",
+      "value": "Air",
+      "group_id": 11,
+      "position": 6
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 11,
+      "position": 7,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Duration [min]": {
+      "type": "number",
+      "value": "120",
+      "group_id": 11,
+      "position": 8,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): j Start [A/cm²]": {
+      "type": "number",
+      "value": "0.1",
+      "group_id": 11,
+      "position": 9,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): j End [A/cm²]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 11,
+      "position": 10,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): j Step [A/cm²]": {
+      "type": "number",
+      "value": "0.1",
+      "group_id": 11,
+      "position": 11,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): OCV Limit [V]": {
+      "type": "number",
+      "value": "0.8",
+      "group_id": 11,
+      "position": 12,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Convergence Criterion [mV/h]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 11,
+      "position": 13,
+      "unit": "mV/h",
+      "units": [
+        "mV/h"
+      ]
+    },
+    "BOL: Galvanostatic Ramp (GSTEP): Hold Time [s]": {
+      "type": "number",
+      "value": "300",
+      "group_id": 11,
+      "position": 14,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Activation Type": {
+      "type": "text",
+      "value": "Altern_BOL (Voltage Cycling)",
+      "group_id": 12,
+      "position": 1
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 12,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): RH Anode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 12,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): RH Cathode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 12,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Gas Anode": {
+      "type": "text",
+      "value": "H₂",
+      "group_id": 12,
+      "position": 5
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Gas Cathode": {
+      "type": "text",
+      "value": "Air",
+      "group_id": 12,
+      "position": 6
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 12,
+      "position": 7,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Duration [min]": {
+      "type": "number",
+      "value": "180",
+      "group_id": 12,
+      "position": 8,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): V Low [V]": {
+      "type": "number",
+      "value": "0.6",
+      "group_id": 12,
+      "position": 9,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): V High [V]": {
+      "type": "number",
+      "value": "0.8",
+      "group_id": 12,
+      "position": 10,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): OCV Limit [V]": {
+      "type": "number",
+      "value": "0.8",
+      "group_id": 12,
+      "position": 11,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Convergence Criterion [mV/h]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 12,
+      "position": 12,
+      "unit": "mV/h",
+      "units": [
+        "mV/h"
+      ]
+    },
+    "BOL: Altern_BOL (Voltage Cycling): Hold Time [s]": {
+      "type": "number",
+      "value": "60",
+      "group_id": 12,
+      "position": 13,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): Activation Type": {
+      "type": "text",
+      "value": "OCV Sweep (BOL_VII)",
+      "group_id": 13,
+      "position": 1
+    },
+    "BOL: OCV Sweep (BOL_VII): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 13,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): RH Anode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 13,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): RH Cathode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 13,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): Gas Anode": {
+      "type": "text",
+      "value": "H₂",
+      "group_id": 13,
+      "position": 5
+    },
+    "BOL: OCV Sweep (BOL_VII): Gas Cathode": {
+      "type": "text",
+      "value": "Air",
+      "group_id": 13,
+      "position": 6
+    },
+    "BOL: OCV Sweep (BOL_VII): Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 13,
+      "position": 7,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): Duration [min]": {
+      "type": "number",
+      "value": "90",
+      "group_id": 13,
+      "position": 8,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): OCV Limit [V]": {
+      "type": "number",
+      "value": "0.95",
+      "group_id": 13,
+      "position": 9,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): Convergence Criterion [mV/h]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 13,
+      "position": 10,
+      "unit": "mV/h",
+      "units": [
+        "mV/h"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): Hold Time [s]": {
+      "type": "number",
+      "value": "600",
+      "group_id": 13,
+      "position": 11,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "BOL: OCV Sweep (BOL_VII): OCV Periods": {
+      "type": "number",
+      "value": "6",
+      "group_id": 13,
+      "position": 12,
+      "unit": "",
+      "units": []
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Activation Type": {
+      "type": "text",
+      "value": "Stoichiometric Sweep (BOL_VIII)",
+      "group_id": 14,
+      "position": 1
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 14,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): RH Anode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 14,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): RH Cathode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 14,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Gas Anode": {
+      "type": "text",
+      "value": "H₂",
+      "group_id": 14,
+      "position": 5
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Gas Cathode": {
+      "type": "text",
+      "value": "Air",
+      "group_id": 14,
+      "position": 6
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 14,
+      "position": 7,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Duration [min]": {
+      "type": "number",
+      "value": "150",
+      "group_id": 14,
+      "position": 8,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): j Constant [A/cm²]": {
+      "type": "number",
+      "value": "0.5",
+      "group_id": 14,
+      "position": 9,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): λ Start": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 14,
+      "position": 10,
+      "unit": "",
+      "units": []
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): λ End": {
+      "type": "number",
+      "value": "5",
+      "group_id": 14,
+      "position": 11,
+      "unit": "",
+      "units": []
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): λ Steps": {
+      "type": "number",
+      "value": "8",
+      "group_id": 14,
+      "position": 12,
+      "unit": "",
+      "units": []
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): OCV Limit [V]": {
+      "type": "number",
+      "value": "0.8",
+      "group_id": 14,
+      "position": 13,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Convergence Criterion [mV/h]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 14,
+      "position": 14,
+      "unit": "mV/h",
+      "units": [
+        "mV/h"
+      ]
+    },
+    "BOL: Stoichiometric Sweep (BOL_VIII): Hold Time [s]": {
+      "type": "number",
+      "value": "300",
+      "group_id": 14,
+      "position": 15,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Activation Type": {
+      "type": "text",
+      "value": "Convergence Loop (BOL_IX)",
+      "group_id": 15,
+      "position": 1
+    },
+    "BOL: Convergence Loop (BOL_IX): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 15,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): RH Anode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 15,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): RH Cathode [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 15,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Gas Anode": {
+      "type": "text",
+      "value": "H₂",
+      "group_id": 15,
+      "position": 5
+    },
+    "BOL: Convergence Loop (BOL_IX): Gas Cathode": {
+      "type": "text",
+      "value": "Air",
+      "group_id": 15,
+      "position": 6
+    },
+    "BOL: Convergence Loop (BOL_IX): Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 15,
+      "position": 7,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Duration [min]": {
+      "type": "number",
+      "value": "240",
+      "group_id": 15,
+      "position": 8,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): j Target [A/cm²]": {
+      "type": "number",
+      "value": "1",
+      "group_id": 15,
+      "position": 9,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): OCV Limit [V]": {
+      "type": "number",
+      "value": "0.8",
+      "group_id": 15,
+      "position": 10,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Convergence Criterion [mV/h]": {
+      "type": "number",
+      "value": "1",
+      "group_id": 15,
+      "position": 11,
+      "unit": "mV/h",
+      "units": [
+        "mV/h"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Hold Time [s]": {
+      "type": "number",
+      "value": "600",
+      "group_id": 15,
+      "position": 12,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "BOL: Convergence Loop (BOL_IX): Max Loops": {
+      "type": "number",
+      "value": "10",
+      "group_id": 15,
+      "position": 13,
+      "unit": "",
+      "units": []
+    },
+    "All EC Polarization Curve: OCV Pre-hold [s]": {
+      "type": "number",
+      "value": "60",
+      "group_id": 16,
+      "position": 1,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "All EC Polarization Curve: Hold Time per Step [s]": {
+      "type": "number",
+      "value": "540",
+      "group_id": 16,
+      "position": 2,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "All EC Polarization Curve: Averaging Time [s]": {
+      "type": "number",
+      "value": "60",
+      "group_id": 16,
+      "position": 3,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "All EC Polarization Curve: Current Steps [A/cm²]": {
+      "type": "text",
+      "value": "0,0.1,0.2,0.4,0.6,0.8,1.0,1.2,1.5,2.0",
+      "group_id": 16,
+      "position": 4,
+      "unit": "A/cm²",
+      "units": [
+        "A/cm²"
+      ]
+    },
+    "All EC CV: Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 17,
+      "position": 1,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "All EC CV 1: Scan Rate [mV/s]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 17,
+      "position": 2,
+      "unit": "mV/s",
+      "units": [
+        "mV/s"
+      ]
+    },
+    "All EC CV 1: E min [mV vs SHE]": {
+      "type": "number",
+      "value": "50",
+      "group_id": 17,
+      "position": 3,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 1: E max [mV vs SHE]": {
+      "type": "number",
+      "value": "900",
+      "group_id": 17,
+      "position": 4,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 1: Cycles": {
+      "type": "number",
+      "value": "20",
+      "group_id": 17,
+      "position": 5,
+      "unit": "",
+      "units": []
+    },
+    "All EC CV 2: Scan Rate [mV/s]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 17,
+      "position": 6,
+      "unit": "mV/s",
+      "units": [
+        "mV/s"
+      ]
+    },
+    "All EC CV 2: E min [mV vs SHE]": {
+      "type": "number",
+      "value": "0",
+      "group_id": 17,
+      "position": 7,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 2: E max [mV vs SHE]": {
+      "type": "number",
+      "value": "900",
+      "group_id": 17,
+      "position": 8,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 2: Cycles": {
+      "type": "number",
+      "value": "20",
+      "group_id": 17,
+      "position": 9,
+      "unit": "",
+      "units": []
+    },
+    "All EC CV 3: Scan Rate [mV/s]": {
+      "type": "number",
+      "value": "20",
+      "group_id": 17,
+      "position": 10,
+      "unit": "mV/s",
+      "units": [
+        "mV/s"
+      ]
+    },
+    "All EC CV 3: E min [mV vs SHE]": {
+      "type": "number",
+      "value": "0",
+      "group_id": 17,
+      "position": 11,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 3: E max [mV vs SHE]": {
+      "type": "number",
+      "value": "900",
+      "group_id": 17,
+      "position": 12,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 3: Cycles": {
+      "type": "number",
+      "value": "5",
+      "group_id": 17,
+      "position": 13,
+      "unit": "",
+      "units": []
+    },
+    "All EC CV 4: Scan Rate [mV/s]": {
+      "type": "number",
+      "value": "20",
+      "group_id": 17,
+      "position": 14,
+      "unit": "mV/s",
+      "units": [
+        "mV/s"
+      ]
+    },
+    "All EC CV 4: E min [mV vs SHE]": {
+      "type": "number",
+      "value": "50",
+      "group_id": 17,
+      "position": 15,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 4: E max [mV vs SHE]": {
+      "type": "number",
+      "value": "900",
+      "group_id": 17,
+      "position": 16,
+      "unit": "mV vs SHE",
+      "units": [
+        "mV vs SHE"
+      ]
+    },
+    "All EC CV 4: Cycles": {
+      "type": "number",
+      "value": "5",
+      "group_id": 17,
+      "position": 17,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 1: DC Current [A]": {
+      "type": "number",
+      "value": "25",
+      "group_id": 18,
+      "position": 1,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 1: Frequency Max [Hz]": {
+      "type": "number",
+      "value": "50000",
+      "group_id": 18,
+      "position": 2,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 1: Frequency Min [Hz]": {
+      "type": "number",
+      "value": "0.1",
+      "group_id": 18,
+      "position": 3,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 1: AC Amplitude [A]": {
+      "type": "number",
+      "value": "1.25",
+      "group_id": 18,
+      "position": 4,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 1: Points per Decade": {
+      "type": "number",
+      "value": "10",
+      "group_id": 18,
+      "position": 5,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 1: Integration Cycles": {
+      "type": "number",
+      "value": "3",
+      "group_id": 18,
+      "position": 6,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 2: DC Current [A]": {
+      "type": "number",
+      "value": "50",
+      "group_id": 18,
+      "position": 7,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 2: Frequency Max [Hz]": {
+      "type": "number",
+      "value": "50000",
+      "group_id": 18,
+      "position": 8,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 2: Frequency Min [Hz]": {
+      "type": "number",
+      "value": "0.1",
+      "group_id": 18,
+      "position": 9,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 2: AC Amplitude [A]": {
+      "type": "number",
+      "value": "2.5",
+      "group_id": 18,
+      "position": 10,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 2: Points per Decade": {
+      "type": "number",
+      "value": "10",
+      "group_id": 18,
+      "position": 11,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 2: Integration Cycles": {
+      "type": "number",
+      "value": "3",
+      "group_id": 18,
+      "position": 12,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 3: DC Current [A]": {
+      "type": "number",
+      "value": "75",
+      "group_id": 18,
+      "position": 13,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 3: Frequency Max [Hz]": {
+      "type": "number",
+      "value": "50000",
+      "group_id": 18,
+      "position": 14,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 3: Frequency Min [Hz]": {
+      "type": "number",
+      "value": "0.1",
+      "group_id": 18,
+      "position": 15,
+      "unit": "Hz",
+      "units": [
+        "Hz"
+      ]
+    },
+    "All EC EIS 3: AC Amplitude [A]": {
+      "type": "number",
+      "value": "3.75",
+      "group_id": 18,
+      "position": 16,
+      "unit": "A",
+      "units": [
+        "A"
+      ]
+    },
+    "All EC EIS 3: Points per Decade": {
+      "type": "number",
+      "value": "10",
+      "group_id": 18,
+      "position": 17,
+      "unit": "",
+      "units": []
+    },
+    "All EC EIS 3: Integration Cycles": {
+      "type": "number",
+      "value": "3",
+      "group_id": 18,
+      "position": 18,
+      "unit": "",
+      "units": []
+    },
+    "All EC H2 Crossover: Hold Time per Step [s]": {
+      "type": "number",
+      "value": "1200",
+      "group_id": 19,
+      "position": 1,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "All EC H2 Crossover: Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 19,
+      "position": 2,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "All EC H2 Crossover: Pressure [bar]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 19,
+      "position": 3,
+      "unit": "bar",
+      "units": [
+        "bar"
+      ]
+    },
+    "All EC H2 Crossover: Acceptance Criterion [mA/cm²]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 19,
+      "position": 4,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ]
+    },
+    "All EC H2X 1: Voltage [V]": {
+      "type": "number",
+      "value": "0.3",
+      "group_id": 19,
+      "position": 5,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "All EC H2X 2: Voltage [V]": {
+      "type": "number",
+      "value": "0.4",
+      "group_id": 19,
+      "position": 6,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "All EC H2X 3: Voltage [V]": {
+      "type": "number",
+      "value": "0.5",
+      "group_id": 19,
+      "position": 7,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "All EC H2X 4: Voltage [V]": {
+      "type": "number",
+      "value": "0.6",
+      "group_id": 19,
+      "position": 8,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "All EC H2X 5: Voltage [V]": {
+      "type": "number",
+      "value": "0.7",
+      "group_id": 19,
+      "position": 9,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): AST Type": {
+      "type": "text",
+      "value": "Catalyst AST (Pt Dissolution)",
+      "group_id": 20,
+      "position": 1
+    },
+    "AST: Catalyst AST (Pt Dissolution): Waveform": {
+      "type": "text",
+      "value": "Square wave",
+      "group_id": 20,
+      "position": 2
+    },
+    "AST: Catalyst AST (Pt Dissolution): E Low [V]": {
+      "type": "number",
+      "value": "0.6",
+      "group_id": 20,
+      "position": 3,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): E High [V]": {
+      "type": "number",
+      "value": "0.95",
+      "group_id": 20,
+      "position": 4,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): Hold Time Low [s]": {
+      "type": "number",
+      "value": "3",
+      "group_id": 20,
+      "position": 5,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): Hold Time High [s]": {
+      "type": "number",
+      "value": "3",
+      "group_id": 20,
+      "position": 6,
+      "unit": "s",
+      "units": [
+        "s"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): Total Cycles": {
+      "type": "number",
+      "value": "30000",
+      "group_id": 20,
+      "position": 7,
+      "unit": "",
+      "units": []
+    },
+    "AST: Catalyst AST (Pt Dissolution): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 20,
+      "position": 8,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): RH [%]": {
+      "type": "number",
+      "value": "100",
+      "group_id": 20,
+      "position": 9,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "AST: Catalyst AST (Pt Dissolution): Diagnostic Interval [cycles]": {
+      "type": "number",
+      "value": "5000",
+      "group_id": 20,
+      "position": 10,
+      "unit": "cycles",
+      "units": [
+        "cycles"
+      ]
+    },
+    "AST: Support AST (Carbon Corrosion): AST Type": {
+      "type": "text",
+      "value": "Support AST (Carbon Corrosion)",
+      "group_id": 21,
+      "position": 1
+    },
+    "AST: Support AST (Carbon Corrosion): Waveform": {
+      "type": "text",
+      "value": "Triangular sweep",
+      "group_id": 21,
+      "position": 2
+    },
+    "AST: Support AST (Carbon Corrosion): E Low [V]": {
+      "type": "number",
+      "value": "1",
+      "group_id": 21,
+      "position": 3,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "AST: Support AST (Carbon Corrosion): E High [V]": {
+      "type": "number",
+      "value": "1.5",
+      "group_id": 21,
+      "position": 4,
+      "unit": "V",
+      "units": [
+        "V"
+      ]
+    },
+    "AST: Support AST (Carbon Corrosion): Scan Rate [mV/s]": {
+      "type": "number",
+      "value": "500",
+      "group_id": 21,
+      "position": 5,
+      "unit": "mV/s",
+      "units": [
+        "mV/s"
+      ]
+    },
+    "AST: Support AST (Carbon Corrosion): Total Cycles": {
+      "type": "number",
+      "value": "5000",
+      "group_id": 21,
+      "position": 6,
+      "unit": "",
+      "units": []
+    },
+    "AST: Support AST (Carbon Corrosion): Temperature [°C]": {
+      "type": "number",
+      "value": "80",
+      "group_id": 21,
+      "position": 7,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "AST: Support AST (Carbon Corrosion): Diagnostic Interval [cycles]": {
+      "type": "number",
+      "value": "1000",
+      "group_id": 21,
+      "position": 8,
+      "unit": "cycles",
+      "units": [
+        "cycles"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): AST Type": {
+      "type": "text",
+      "value": "Membrane AST (OCV Hold)",
+      "group_id": 22,
+      "position": 1
+    },
+    "AST: Membrane AST (OCV Hold): OCV Hold Duration [h]": {
+      "type": "number",
+      "value": "200",
+      "group_id": 22,
+      "position": 2,
+      "unit": "h",
+      "units": [
+        "h"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): RH Low [%]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 22,
+      "position": 3,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): RH High [%]": {
+      "type": "number",
+      "value": "90",
+      "group_id": 22,
+      "position": 4,
+      "unit": "%",
+      "units": [
+        "%"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): RH Cycle Period [min]": {
+      "type": "number",
+      "value": "2",
+      "group_id": 22,
+      "position": 5,
+      "unit": "min",
+      "units": [
+        "min"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): Temperature [°C]": {
+      "type": "number",
+      "value": "90",
+      "group_id": 22,
+      "position": 6,
+      "unit": "°C",
+      "units": [
+        "°C"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): Diagnostic Interval [h]": {
+      "type": "number",
+      "value": "24",
+      "group_id": 22,
+      "position": 7,
+      "unit": "h",
+      "units": [
+        "h"
+      ]
+    },
+    "AST: Membrane AST (OCV Hold): Crossover Criterion [mA/cm²]": {
+      "type": "number",
+      "value": "4",
+      "group_id": 22,
+      "position": 8,
+      "unit": "mA/cm²",
+      "units": [
+        "mA/cm²"
+      ]
+    },
+    "Rated Power [W/cm²]": {
+      "type": "number",
+      "value": "",
+      "group_id": 23,
+      "position": 1,
+      "unit": "W/cm²",
+      "units": [
+        "W/cm²"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "Test Outcome": {
+      "type": "select",
+      "value": "",
+      "options": [
+        "Completed",
+        "Aborted",
+        "Failed / leak",
+        "Other"
+      ],
+      "group_id": 23,
+      "position": 2
+    },
+    "Test Duration [h]": {
+      "type": "number",
+      "value": "",
+      "group_id": 23,
+      "position": 3,
+      "unit": "h",
+      "units": [
+        "h",
+        "min"
+      ],
+      "blank_value_on_duplicate": true
+    },
+    "Notes": {
+      "type": "text",
+      "value": "",
+      "group_id": 24,
+      "position": 2
+    }
+  },
+  "elabftw": {
+    "display_main_text": false,
+    "extra_fields_groups": [
+      {
+        "id": 1,
+        "name": "Identification"
+      },
+      {
+        "id": 2,
+        "name": "Key Results — EC1"
+      },
+      {
+        "id": 3,
+        "name": "Key Results — EC2"
+      },
+      {
+        "id": 4,
+        "name": "Key Results — EC3"
+      },
+      {
+        "id": 5,
+        "name": "Test Conditions — EC1"
+      },
+      {
+        "id": 6,
+        "name": "Test Conditions — EC2"
+      },
+      {
+        "id": 7,
+        "name": "Test Conditions — EC3"
+      },
+      {
+        "id": 8,
+        "name": "Detailed Results — EC1"
+      },
+      {
+        "id": 9,
+        "name": "Detailed Results — EC2"
+      },
+      {
+        "id": 10,
+        "name": "Detailed Results — EC3"
+      },
+      {
+        "id": 11,
+        "name": "BOL: Galvanostatic Ramp (GSTEP)"
+      },
+      {
+        "id": 12,
+        "name": "BOL: Altern_BOL (Voltage Cycling)"
+      },
+      {
+        "id": 13,
+        "name": "BOL: OCV Sweep (BOL_VII)"
+      },
+      {
+        "id": 14,
+        "name": "BOL: Stoichiometric Sweep (BOL_VIII)"
+      },
+      {
+        "id": 15,
+        "name": "BOL: Convergence Loop (BOL_IX)"
+      },
+      {
+        "id": 16,
+        "name": "Shared Parameters — Polarization Curve"
+      },
+      {
+        "id": 17,
+        "name": "Shared Parameters — CV"
+      },
+      {
+        "id": 18,
+        "name": "Shared Parameters — EIS"
+      },
+      {
+        "id": 19,
+        "name": "Shared Parameters — H₂ Crossover"
+      },
+      {
+        "id": 20,
+        "name": "AST: Catalyst AST (Pt Dissolution)"
+      },
+      {
+        "id": 21,
+        "name": "AST: Support AST (Carbon Corrosion)"
+      },
+      {
+        "id": 22,
+        "name": "AST: Membrane AST (OCV Hold)"
+      },
+      {
+        "id": 23,
+        "name": "Results Summary"
+      },
+      {
+        "id": 24,
+        "name": "Notes"
+      }
+    ]
+  }
+}
